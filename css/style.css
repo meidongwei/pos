@@ -1,0 +1,371 @@
+/*!
+ * 标准色：
+ * 绿色 #1fae92 （primary）
+ * 红色 #df5143 （danger）
+ * 蓝色 #377790 （暂未使用）
+ * 浅蓝 #d9edf6 （辅助色）
+ */
+
+/* 格式化样式 */
+a {
+  color: #505050;
+}
+.btn {
+  border-radius: 0px;
+}
+.btn-primary {
+  background-color: #1fae92;
+  border-color: #1fae92;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #188f78;
+  border-color: #188f78;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #188f78;
+  border-color: #188f78;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #188f78;
+  border-color: #188f78;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #188f78;
+  border-color: #188f78;
+}
+.btn-danger {
+  background-color: #df5143;
+  border-color: #df5143;
+}
+.btn-outline-primary {
+  background-color: #fff;
+  border-color: #1fae92;
+  color: #1fae92;
+}
+/* 通用样式 */
+body {
+  background-color: #eeeeee;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-navbar {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.btn-lg {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.m-shopping-cart-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid #e3e3e3;
+  text-align: center;
+  padding: 5px;
+  z-index: 999;
+}
+/* 购物车样式 */
+.m-shopping-cart {
+  background-color: #fff;
+  height: 380px;
+  position: relative;
+  box-shadow: 1px 1px 3px #dadada;
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  z-index: 100;
+}
+.m-shopping-cart-header {
+  height: 50px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.middle-con p {
+  margin: 0;
+  text-align: center;
+}
+.left-con,
+.middle-con,
+.right-con {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-shopping-cart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+.m-nav-tabs > li {
+  margin-bottom: 0;
+}
+.m-nav-tabs > li > a {
+  font-size: 16px;
+}
+.m-nav-tabs > li.active > a,
+.m-nav-tabs > li.active > a:hover,
+.m-nav-tabs > li.active > a:focus {
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  color: #df5143;
+}
+.m-nav-tabs > li.active > a:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #df5143;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+.m-tab-pane {
+  padding: 10px;
+  height: 225px;
+  overflow: scroll;
+}
+.m-table > thead > tr > th,
+.m-table > tbody > tr > th,
+.m-table > tfoot > tr > th,
+.m-table > thead > tr > td,
+.m-table > tbody > tr > td,
+.m-table > tfoot > tr > td {
+  padding: 5px;
+  line-height: 1.42857143;
+  border-top: none;
+  vertical-align: middle;
+}
+.m-table tr td:last-child {
+  text-align: right;
+  width: 120px;
+}
+.m-table tr td:nth-child(2) {
+  text-align: right;
+}
+.m-table tr td.m-beizhu {
+  text-align: left;
+  color: #bebebe;
+}
+.m-table tr td.m-beizhu span:first-child {
+  margin-right: 15px;
+}
+.m-table tr td.m-beizhu p {
+  margin-bottom: 0;
+}
+
+
+
+
+/* 菜单面板样式 */
+.m-menu-panel-box,
+.m-slide-navbar-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+.m-menu-panel-box {
+  padding-right: 5px;
+}
+.m-menu-panel {
+  background-color: #fff;
+  height: 550px;
+  position: relative;
+  box-shadow: 1px 1px 3px #dadada;
+}
+.m-menu-panel-header {
+  padding: 5px;
+}
+.m-menu-panel-header .input-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.m-menu-panel-body {
+  height: 460px;
+  overflow: scroll;
+}
+.m-menu-panel-body .row {
+  margin: 0;
+}
+.m-menu-panel-body .col-md-3 {
+  padding: 0;
+}
+.m-menu-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9edf6;
+  height: 80px;
+  border: 1px solid #b3daec;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.m-menu-cell:active {
+  background-color: #bad5e2;
+}
+.m-menu-cell-null {
+  background-color: #6a6a6a;
+  position: relative;
+  pointer-events: none;
+}
+.m-menu-cell-null .m-null {
+  position: absolute;
+  top: 30px;
+  color: #fff;
+}
+.m-menu-cell p {
+  margin-bottom: 0;
+}
+.m-menu-cell p:nth-child(1) {
+  text-align: justify;
+}
+.m-menu-cell p:nth-child(2) {
+  color: #8b8b8b;
+}
+.m-menu-panel-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+.m-menu-panel-footer span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* 侧导航栏样式 */
+.m-slide-navbar {
+  height: 550px;
+}
+.m-slide-navbar .btn-primary {
+  margin-bottom: 5px;
+  width: 100%;
+  /* height: 63.5px; */
+  height: 50px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+  white-space: normal !important;
+  border: 0;
+  box-shadow: 1px 1px 3px #dadada;
+}
+.m-change-pane {
+  height: 440px;
+  margin-bottom: 5px;
+  overflow: scroll;
+}
+
+
+
+
+/* ------ */
+/* ----------- */
+/* ---------------- */
+/* --------------------- */
+/* -------------------------- */
+/* ------------------------------- */
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+  .m-menu-panel-box,
+  .m-slide-navbar-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .m-navbar {
+    margin-bottom: 15px;
+  }
+  /* 购物车样式 */
+  .m-shopping-cart {
+    display: block !important;
+    height: 680px;
+    position: relative;
+    bottom: 0;
+  }
+  .m-shopping-cart-footer {
+    height: 60px;
+  }
+  .m-tab-pane {
+    height: 525px;
+  }
+
+  /* 菜单面板样式 */
+  .m-menu-panel {
+    height: 680px;
+  }
+  .m-menu-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }
+  .m-menu-panel-header .input-group {
+    width: 170px;
+    margin-bottom: 0;
+  }
+  .m-menu-panel-header .form-control {
+    height: 46px;
+    font-size: 16px;
+  }
+  .m-menu-panel-body  {
+    height: auto;
+  }
+  .m-menu-cell-null {
+    background-color: #6a6a6a;
+  }
+
+  /* 侧导航栏样式 */
+  .m-slide-navbar {
+    height: 680px;
+  }
+  .m-slide-navbar .btn-primary {
+    height: 63.5px;
+  }
+  .m-change-pane {
+    height: 405px;
+  }
+}
+@media (min-width: 1200px) {
+}
