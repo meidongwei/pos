@@ -6,10 +6,511 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>菜品管理</title>
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="container-fluid">
-    <h3 class="page-header">【热菜类】菜品管理</h3>
+
+    <div class="m-page-header">
+      <h4>【热菜类】菜品管理</h4>
+      <a href="javascript:;" class="btn m-btn-outline-blue">保存</a>
+    </div>
+
+    <div>
+      <ul class="nav nav-tabs m-nav-tabs">
+        <li class="active"><a href="#pane1" data-toggle="tab">基础信息</a></li>
+        <li><a href="#pane2" data-toggle="tab">外卖信息</a></li>
+        <li><a href="#pane3" data-toggle="tab">做法信息</a></li>
+        <li><a href="#pane4" data-toggle="tab">营销活动</a></li>
+      </ul>
+      <div class="tab-content">
+
+        <!-- ********** -->
+        <!-- 菜品基础信息 -->
+        <!-- ********** -->
+        <div class="tab-pane m-tab-pane active" id="pane1">
+          <div class="form-horizontal m-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="cpNum" class="col-sm-3 control-label">菜品编码：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cpNum" placeholder="666">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cpName" class="col-sm-3 control-label">菜品名称：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cpName" placeholder="最多输入100个字符">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cpAlias" class="col-sm-3 control-label">菜品别名：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cpAlias" placeholder="最多输入100个字符">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cpAbc" class="col-sm-3 control-label">字母首拼：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cpAbc">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cpEngName" class="col-sm-3 control-label">英文名称：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cpEngName" placeholder="最多输入100个字符">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">菜品属性：</label>
+                  <div class="col-sm-9">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 必须称重
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 是临时菜
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 价格可修改
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 加收比例服务费
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 参与点击率统计
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 只在套餐中销售
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 开台根据人数自动加载
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 参与订单优惠
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">适用设备：</label>
+                  <div class="col-sm-9">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 适用于点菜宝
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="dw" class="col-sm-3 control-label">单位：</label>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="dw">
+                      <option>请选择单位</option>
+                      <option>石家庄品智科技</option>
+                      <option>北京品智科技</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="edcb" class="col-sm-3 control-label">额定成本：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="edcb" placeholder="单位（元）">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="dctc" class="col-sm-3 control-label">点菜员提成：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="dctc" placeholder="单位（元）">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cctc" class="col-sm-3 control-label">传菜员提成：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cctc" placeholder="单位（元）">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="dj" class="col-sm-3 control-label">单价：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="dj" placeholder="单位（元）">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="hyj" class="col-sm-3 control-label">会员价：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="hyj" placeholder="单位（元）">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cstc" class="col-sm-3 control-label">厨师提成：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cstc" placeholder="单位（元）">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pcytc" class="col-sm-3 control-label">配菜员提成：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="pcytc" placeholder="单位（元）">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="ljsl" class="col-sm-3 control-label">累加数量：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="ljsl" placeholder="666">
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <span class="m-secondary">注：每点一次，数量的累加值</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="zzsc" class="col-sm-3 control-label">制作时长：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="zzsc" placeholder="单位（分）">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="qdsl" class="col-sm-3 control-label">起点数量：</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="qdsl" placeholder="666">
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <span class="m-secondary">注：订单最小起购数量</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="zpcl" class="col-sm-3 control-label">招牌菜类：</label>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="zpcl">
+                      <option>请选择菜类</option>
+                      <option>北京烤鸭</option>
+                      <option>腰果虾仁</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <span class="m-secondary">注：后台报表可单独统计招牌菜类，招牌菜类只显示在自助点餐设备端</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <a class="btn m-btn-outline-blue" data-toggle="collapse"
+              href="#collapseExample" style="margin-bottom: 15px;">
+              客人自助微信点餐相关属性设置 <span class="caret"></span>
+            </a>
+            <div class="collapse" id="collapseExample">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="cdxsl" class="col-sm-3 control-label">C端显示类：</label>
+                    <div class="col-sm-9">
+                      <select class="form-control" id="cdxsl">
+                        <option>请选择菜类</option>
+                        <option>京酱肉丝</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <span class="m-secondary">
+                        注：C端显示类只显示在客人端，没有选择C端显示类的菜品不会显示到【扫码点餐】、
+                        【外卖APP】端。
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="cpjj" class="col-sm-3 control-label">菜品简介：</label>
+                    <div class="col-sm-9">
+                      <textarea class="form-control" id="cpjj" rows="3"
+                        placeholder="请输入100字以内的简介，方便客人自助点菜时了解它。"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">菜品图片：</label>
+                    <div class="col-sm-9">
+                      <a href="javascript:;" class="btn m-btn-blue m-upload">开始上传
+                        <input class="m-change" type="file" multiple="multiple" />
+                      </a>
+                      <div style="display:flex;margin-top:5px;">
+                        <div class="m-show-pic"></div>
+                        <div style="color:#bdbdbd;">
+                          <span>格式：jpg,png</span><br>
+                          <span>尺寸：750*536px</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">菜品后缀：</label>
+                    <div class="col-sm-9">
+                      <p style="margin-top:7px;color:#bdbdbd;">自助点菜时显示在菜名后，用以表示菜品特色</p>
+                      <a href="javascript:;" class="btn m-btn-blue m-upload">本地图库
+                        <input class="m-change" type="file" multiple="multiple" />
+                      </a>
+                      <a href="javascript:;" class="btn m-btn-blue m-upload">文件上传
+                        <input class="m-change" type="file" multiple="multiple" />
+                      </a>
+                      <div style="display:flex;margin-top:5px;">
+                        <div class="m-show-pic2"></div>
+                        <div style="color:#bdbdbd;">
+                          <span>格式：jpg,png</span><br>
+                          <span>尺寸：30*3px</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ********** -->
+        <!-- 菜品外卖信息 -->
+        <!-- ********** -->
+        <div class="tab-pane m-tab-pane" id="pane2">
+          <div class="form-horizontal m-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="chNum" class="col-sm-3 control-label">餐盒数量：</label>
+                  <div class="col-sm-9">
+                    <div class="input-group">
+                      <span class="input-group-addon">大份</span>
+                      <input type="number" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <span class="m-secondary">
+                      注：餐盒费默认1元/个，如果餐盒费3元，数量请输入3。
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <div class="input-group">
+                      <span class="input-group-addon">小份</span>
+                      <input type="number" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <span class="m-secondary">
+                      注：餐盒费默认1元/个，如果餐盒费3元，数量请输入3。
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">外卖图片：</label>
+                  <div class="col-sm-9">
+                    <a href="javascript:;" class="btn m-btn-blue m-upload">开始上传
+                      <input class="m-change" type="file" multiple="multiple" />
+                    </a>
+                    <div style="display:flex;margin-top:5px;">
+                      <div class="m-show-pic2"></div>
+                      <div style="color:#bdbdbd;">
+                        <span>格式：jpg,png</span><br>
+                        <span>尺寸：30*30px</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="chNum" class="col-sm-3 control-label">售卖周期：</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions"
+                        id="inlineRadio1" value="option1" checked> 日期不限
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions"
+                        id="inlineRadio2" value="option2"> 限时售卖
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="chNum" class="col-sm-3 control-label">日期限制：</label>
+                  <div class="col-sm-9">
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 每天售卖
+                    </label>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周一
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周二
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周三
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周四
+                    </label>
+                    <br>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周五
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周六
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1"
+                        value="option1" checked> 周日
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="chNum" class="col-sm-3 control-label">售卖时间：</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions2"
+                        id="inlineRadio3" value="option1" checked> 全天售卖
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions2"
+                        id="inlineRadio4" value="option2"> 指定时间售卖
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ********** -->
+        <!-- 菜品做法信息 -->
+        <!-- ********** -->
+        <div class="tab-pane m-tab-pane" id="pane3">
+          <div class="form-horizontal m-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="m-secondary" style="margin-bottom:10px;">
+                  注：做法加价是指按菜品的数量进行加价。
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group m-input-group">
+                      <span class="input-group-addon">
+                        <input type="checkbox">
+                      </span>
+                      <span class="input-group-addon">红烧</span>
+                      <span class="input-group-addon">加价</span>
+                      <input type="text" class="form-control" placeholder="单位（元）">
+                    </div>
+                    <div class="input-group m-input-group">
+                      <span class="input-group-addon">
+                        <input type="checkbox">
+                      </span>
+                      <span class="input-group-addon">清蒸</span>
+                      <span class="input-group-addon">加价</span>
+                      <input type="text" class="form-control"
+                        placeholder="单位（元）" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ********** -->
+        <!-- 菜品营销活动 -->
+        <!-- ********** -->
+        <div class="tab-pane m-tab-pane" id="pane4">
+          <div class="form-horizontal m-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="chNum" class="col-sm-3 control-label">营销活动：</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions3"
+                        id="inlineRadio3" value="option1" checked> 不参与
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions3"
+                        id="inlineRadio4" value="option2"> 参与买赠活动
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions3"
+                        id="inlineRadio5" value="option2"> 参与买赠活动
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="m-footer" style="height: 100px;"></div>
   </div>
+
+
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
