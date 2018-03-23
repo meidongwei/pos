@@ -57,12 +57,14 @@
 
 
 .m-page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  padding: 9px 15px;
+  margin: 0 0 20px 0;
+  /* border-bottom: 1px solid #eee; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #dddddd;
 }
 .m-nav-tabs > li {
   margin-bottom: 0;
@@ -120,6 +122,32 @@
 .m-input-group {
   margin-bottom: 5px;
 }
+
+
+
+.m-nav-tabs-2 {
+  border-bottom: none;
+  margin-top: 15px;
+}
+.m-nav-tabs-2 > li {
+  margin-bottom: 0;
+}
+.m-nav-tabs-2 > li.active > a,
+.m-nav-tabs-2 > li.active > a:hover,
+.m-nav-tabs-2 > li.active > a:focus {
+  cursor: default;
+  background-color: #4693fd;
+  border: 1px solid #fff;
+  position: relative;
+  color: #fff;
+}
+.m-nav-tabs-2 li a {
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+
 
 
 @media (min-width: 768px) {

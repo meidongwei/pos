@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body style="padding-top: 60px;">
   <div class="container-fluid">
 
-    <div class="m-page-header">
+    <div class="m-page-header navbar-fixed-top">
       <h4>【热菜类】菜品管理</h4>
       <a href="javascript:;" class="btn m-btn-outline-blue">保存</a>
     </div>
@@ -136,6 +136,13 @@
               </div>
             </div>
             <hr>
+            <div class="row"
+              style="margin-bottom:10px;display:flex;justify-content:center;">
+              <div class="col-xs-6 col-md-2">
+                <a href="javascript:;" class="btn m-btn-blue btn-block"
+                  onclick="handleAddPane()">+</a>
+              </div>
+            </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -143,8 +150,8 @@
                   <div class="col-sm-9">
                     <select class="form-control" id="dw">
                       <option>请选择单位</option>
-                      <option>石家庄品智科技</option>
-                      <option>北京品智科技</option>
+                      <option>份</option>
+                      <option>克</option>
                     </select>
                   </div>
                 </div>
@@ -194,6 +201,7 @@
                 </div>
               </div>
             </div>
+            <div id="m-add"></div>
             <hr>
             <div class="row">
               <div class="col-md-6">
@@ -384,38 +392,38 @@
                   <label for="chNum" class="col-sm-3 control-label">日期限制：</label>
                   <div class="col-sm-9">
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 每天售卖
                     </label>
                   </div>
                   <div class="col-sm-9 col-sm-offset-3">
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周一
                     </label>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周二
                     </label>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周三
                     </label>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周四
                     </label>
                     <br>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周五
                     </label>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周六
                     </label>
                     <label class="checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1"
+                      <input type="checkbox" id=""
                         value="option1" checked> 周日
                     </label>
                   </div>
@@ -478,24 +486,203 @@
         <!-- 菜品营销活动 -->
         <!-- ********** -->
         <div class="tab-pane m-tab-pane" id="pane4">
-          <div class="form-horizontal m-form">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="chNum" class="col-sm-3 control-label">营销活动：</label>
-                  <div class="col-sm-9">
-                    <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions3"
-                        id="inlineRadio3" value="option1" checked> 不参与
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions3"
-                        id="inlineRadio4" value="option2"> 参与买赠活动
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions3"
-                        id="inlineRadio5" value="option2"> 参与买赠活动
-                    </label>
+          <ul class="nav nav-tabs m-nav-tabs-2">
+            <li class="active"><a href="#pane101" data-toggle="tab">不参与</a></li>
+            <li><a href="#pane102" data-toggle="tab">参与买赠方案</a></li>
+            <li><a href="#pane103" data-toggle="tab">参与特价方案</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane m-tab-pane active" id="pane101"></div>
+            <div class="tab-pane m-tab-pane" id="pane102">
+              <div class="form-horizontal m-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="gmNum" class="col-sm-3 control-label">购买数量：</label>
+                      <div class="col-sm-9">
+                        <input type="number" class="form-control" id="gmNum" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="zscp" class="col-sm-3 control-label">赠送菜品：</label>
+                      <div class="col-sm-9">
+                        <select class="form-control" id="zscp">
+                          <option>请选择赠菜（1份）</option>
+                          <option>宫保鸡丁</option>
+                          <option>红烧狮子头</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="yxrq" class="col-sm-3 control-label">有效日期：</label>
+                      <div class="col-sm-4">
+                        <input type="number" class="form-control" id="yxrq"
+                          placeholder="" style="margin-bottom: 5px;">
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="number" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="chNum" class="col-sm-3 control-label">日期限制：</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions101"
+                            value="option1" checked> 每逢星期几
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions101"
+                            value="option2"> 每逢几号
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions101"
+                            value="option2"> 每一天
+                        </label>
+                      </div>
+                      <div class="col-sm-9 col-sm-offset-3">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周一
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周二
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周三
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周四
+                        </label>
+                        <br>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周五
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周六
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周日
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="chNum" class="col-sm-3 control-label">可用时间：</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions102"
+                            value="option1" checked> 全天可用
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions102"
+                            value="option2"> 指定时间可用
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane m-tab-pane" id="pane103">
+              <div class="form-horizontal m-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="xgsl" class="col-sm-3 control-label">限购数量：</label>
+                      <div class="col-sm-9">
+                        <input type="number" class="form-control" id="xgsl" placeholder="">
+                      </div>
+                      <div class="col-sm-9 col-sm-offset-3">
+                        <span class="m-secondary">
+                          注：一个订单中可点次特价菜的最大数量
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="cptj" class="col-sm-3 control-label">菜品特价：</label>
+                      <div class="col-sm-9">
+                        <input type="text" id="cptj" class="form-control" placeholder="单位（元）">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="col-sm-3 control-label">适用人群：</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions103"
+                            value="option1" checked> 所有人
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions103"
+                            value="option2"> 会员
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="chNum" class="col-sm-3 control-label">日期限制：</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions104"
+                            value="option1" checked> 每逢星期几
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions104"
+                            value="option2"> 每逢几号
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions104"
+                            value="option2"> 每一天
+                        </label>
+                      </div>
+                      <div class="col-sm-9 col-sm-offset-3">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周一
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周二
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周三
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周四
+                        </label>
+                        <br>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周五
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周六
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id=""
+                            value="option1" checked> 周日
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="chNum" class="col-sm-3 control-label">可用时间：</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions105"
+                            value="option1" checked> 全天可用
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions105"
+                            value="option2"> 指定时间可用
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -512,5 +699,81 @@
 
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script>
+    function handleAddPane () {
+      $('#m-add').append(`
+        <div class="row" style="margin-bottom:10px;">
+          <div class="col-xs-6 col-md-2 col-md-offset-4">
+            <a href="javascript:;" class="btn btn-danger btn-block"
+              onclick="handleDelPane()">-</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="javascript:;" class="btn m-btn-blue btn-block"
+              onclick="handleAddPane()">+</a>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="dw" class="col-sm-3 control-label">单位：</label>
+            <div class="col-sm-9">
+              <select class="form-control" id="dw">
+                <option>请选择单位</option>
+                <option>份</option>
+                <option>克</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edcb" class="col-sm-3 control-label">额定成本：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="edcb" placeholder="单位（元）">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dctc" class="col-sm-3 control-label">点菜员提成：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="dctc" placeholder="单位（元）">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cctc" class="col-sm-3 control-label">传菜员提成：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="cctc" placeholder="单位（元）">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="dj" class="col-sm-3 control-label">单价：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="dj" placeholder="单位（元）">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="hyj" class="col-sm-3 control-label">会员价：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="hyj" placeholder="单位（元）">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cstc" class="col-sm-3 control-label">厨师提成：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="cstc" placeholder="单位（元）">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pcytc" class="col-sm-3 control-label">配菜员提成：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="pcytc" placeholder="单位（元）">
+            </div>
+          </div>
+        </div>
+      </div>`)
+    }
+    function handleDelPane () {
+      $('#m-add').empty()
+    }
+  </script>
 </body>
 </html>
