@@ -1,7 +1,7 @@
 /* ==================== */
 /* ====== 通用样式 ====== */
 /* ==================== */
-/* 标签样式 */
+/* 标签样式格式化 */
 .label {
   padding: 0.25em 0.4em;
 }
@@ -25,6 +25,28 @@
 .m-btn-outline-blue.active.focus {
   border: 1px solid #3678d2;
   color: #3678d2;
+  background-color: #fff;
+}
+/* 红色轮廓按钮 */
+.m-btn-outline-red {
+  border: 1px solid #df5143;
+  border-radius: 100px;
+  color: #df5143;
+  background-color: #fff;
+}
+.m-btn-outline-red:hover,
+.m-btn-outline-red:active,
+.m-btn-outline-red.active,
+.m-btn-outline-red:focus,
+.m-btn-outline-red.focus,
+.m-btn-outline-red:active:hover,
+.m-btn-outline-red.active:hover,
+.m-btn-outline-red:active:focus,
+.m-btn-outline-red.active:focus
+.m-btn-outline-red:active.focus,
+.m-btn-outline-red.active.focus {
+  border: 1px solid #cd4739;
+  color: #cd4739;
   background-color: #fff;
 }
 /* 绿色按钮 */
