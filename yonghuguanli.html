@@ -17,17 +17,282 @@
 
     <div class="row">
       <div class="col-md-2">
-        <div>
-          <ul class="nav nav-pills">
-            <li class="active"><a href="#home" data-toggle="tab">用户管理</a></li>
-            <li><a href="#profile" data-toggle="tab">角色管理</a></li>
+        <div class="m-yonghu-nav">
+          <ul class="nav nav-pills m-nav-pills">
+            <li class="active"><a href="#yhgl" data-toggle="tab">用户管理</a></li>
+            <li><a href="#jsgl" data-toggle="tab">角色管理</a></li>
           </ul>
         </div>
       </div>
       <div class="col-md-10">
         <div class="tab-content">
-          <div class="tab-pane active" id="home">
-            <div class="form-inline">
+
+          <!-- ========== -->
+          <!-- 用户管理样式 -->
+          <!-- ========== -->
+          <div class="tab-pane active" id="yhgl">
+
+            <div class="form-inline" style="margin:15px 0;">
+              <div class="form-group">
+                <label for="js">用户：</label>
+                <input type="text" class="form-control" id="js" placeholder="姓名/首拼/工号">
+              </div>
+              <div class="form-group">
+                <label for="jsjb">角色：</label>
+                <select id="jsjb" class="form-control">
+                  <option>请选择所属角色</option>
+                  <option>管理员</option>
+                </select>
+              </div>
+              <button type="submit" class="btn m-btn-green">查询</button>
+              <button type="submit" class="btn m-btn-green pull-right">添加</button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <tr>
+                  <td>序号</td>
+                  <td>姓名</td>
+                  <td>性别</td>
+                  <td>工号</td>
+                  <td>角色</td>
+                  <td>电话</td>
+                  <td>操作</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>孙悟空</td>
+                  <td>男</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>18803118888</td>
+                  <td>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                    <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="m-pagination-box">
+              <p>显示第1-10页结果，共12页</p>
+              <ul class="pagination m-pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">下一页</a></li>
+              </ul>
+            </div>
+
+            <!-- 注：以下 hr 标签为无用代码 可删除 -->
+            <hr>
+            <!-- end -->
+
+            <!-- 添加用户 -->
+            <div class="form-horizontal m-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label">用户姓名：</label>
+                    <div class="col-sm-9">
+                      <input id="username" type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">性别：</label>
+                    <div class="col-sm-9">
+                      <label class="radio-inline">
+                        <input type="radio" name="sex"
+                         value="option1" checked> 男
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="sex"
+                         value="option2"> 女
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="xmsp" class="col-sm-3 control-label">姓名首拼：</label>
+                    <div class="col-sm-9">
+                      <input id="xmsp" type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">所属角色：</label>
+                    <div class="col-sm-9">
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option1" checked> 店长
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option2"> 收银员
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option2"> 点菜员
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option2"> 传菜员
+                      </label>
+                      <br>
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option2"> 配菜员
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="ssjs"
+                         value="option2"> 厨师
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="gh" class="col-sm-3 control-label">工号：</label>
+                    <div class="col-sm-9">
+                      <input id="gh" type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">密码：</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control"
+                        placeholder="初始密码同工号" disabled>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="dh" class="col-sm-3 control-label">电话：</label>
+                    <div class="col-sm-9">
+                      <input id="dh" type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                      <button type="button" class="btn btn-default">放弃</button>
+                      <button type="button" class="btn m-btn-blue">保存</button>
+                      <button type="button" class="btn m-btn-blue">保存并继续</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ========== -->
+          <!-- 角色管理样式 -->
+          <!-- ========== -->
+          <div class="tab-pane" id="jsgl">
+
+            <div class="form-inline" style="margin:15px 0;">
               <div class="form-group">
                 <label for="js">角色：</label>
                 <input type="text" class="form-control" id="js" placeholder="角色名称/编码">
@@ -39,20 +304,175 @@
                   <option>普通会员</option>
                 </select>
               </div>
-              <button type="submit" class="btn m-btn-blue">查询</button>
+              <button type="submit" class="btn m-btn-green">查询</button>
             </div>
 
             <div class="table-responsive">
-              <table class="table">
+              <table class="table table-bordered table-striped">
                 <tr>
-                  <td>ID</td>
-                  <td>名字</td>
+                  <td>序号</td>
+                  <td>角色编码</td>
+                  <td>角色名称</td>
+                  <td>角色级别</td>
+                  <td>最大抹零金额</td>
+                  <td>单品折扣上限</td>
+                  <td>操作</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>002</td>
+                  <td>收银员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>003</td>
+                  <td>点菜员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>004</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>005</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>006</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>007</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>008</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>009</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>010</td>
+                  <td>管理员</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="javascript:;" class="btn btn-xs">查看权限</a></td>
                 </tr>
               </table>
             </div>
 
+            <div class="m-pagination-box">
+              <p>显示第1-10页结果，共12页</p>
+              <ul class="pagination m-pagination">
+                <li><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">下一页</a></li>
+              </ul>
+            </div>
+
+            <!-- 注：以下 hr 标签为无用代码 可删除 -->
+            <hr>
+            <!-- end -->
+
+            <!-- 查看权限 -->
+            <div class="form-horizontal m-form">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="m-secondary">
+                    注：系统内置了十个“角色级别”，不同角色可以选择同一个级别，
+                    级别数字越大级别越高。
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">角色名称：</label>
+                    <div class="col-sm-9">
+                      <p class="form-control-static">收银员</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">角色级别：</label>
+                    <div class="col-sm-9">
+                      <p class="form-control-static">5</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">角色权限：</label>
+                    <div class="col-sm-9 m-label-con">
+                      <span class="label label-info">点加菜</span>
+                      <span class="label label-info">退菜</span>
+                      <span class="label label-info">催菜</span>
+                      <span class="label label-info">传菜</span>
+                      <span class="label label-info">赠送</span>
+                      <span class="label label-info">取消赠送</span>
+                      <span class="label label-info">单品折扣</span>
+                      <span class="label label-info">换点菜员</span>
+                      <span class="label label-info">快印</span>
+                      <span class="label label-info">退菜</span>
+                      <span class="label label-info">修改菜品价格</span>
+                      <span class="label label-info">预结</span>
+                      <span class="label label-info">结账</span>
+                      <span class="label label-info">抹零</span>
+                      <span class="label label-info">反结账</span>
+                      <span class="label label-info">修改茶位费</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="tab-pane" id="profile">角色管理</div>
         </div>
       </div>
     </div>

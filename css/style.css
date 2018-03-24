@@ -1,4 +1,10 @@
-/* 通用样式 */
+/* ==================== */
+/* ====== 通用样式 ====== */
+/* ==================== */
+/* 标签样式 */
+.label {
+  padding: 0.25em 0.4em;
+}
 /* 蓝色轮廓按钮 */
 .m-btn-outline-blue {
   border: 1px solid #4693fd;
@@ -21,6 +27,25 @@
   color: #3678d2;
   background-color: #fff;
 }
+/* 绿色按钮 */
+.m-btn-green {
+  color: #fff;
+  background-color: #1fae92;
+}
+.m-btn-blue:hover,
+.m-btn-blue:active,
+.m-btn-blue.active,
+.m-btn-blue:focus,
+.m-btn-blue.focus,
+.m-btn-blue:active:hover,
+.m-btn-blue.active:hover,
+.m-btn-blue:active:focus,
+.m-btn-blue.active:focus
+.m-btn-blue:active.focus,
+.m-btn-blue.active.focus {
+  color: #fff;
+  background-color: #1fae92;
+}
 /* 蓝色按钮 */
 .m-btn-blue {
   color: #fff;
@@ -40,7 +65,10 @@
   color: #fff;
   background-color: #3678d2;
 }
-
+/* 上传文件按钮样式 */
+.m-upload {
+  position: relative;
+}
 .m-change{
   position: absolute;
   overflow: hidden;
@@ -49,23 +77,32 @@
   opacity: 0;
   cursor: pointer;
 }
-.m-upload {
-  position: relative;
+/* 显示图片样式 */
+.m-show-pic {
+  width: 120px;
+  height: 70px;
+  background-color: #cbcbcb;
+  margin-right: 5px;
+  border-radius: 3px;
 }
-
-
-
-
+.m-show-pic2 {
+  width: 30px;
+  height: 30px;
+  background-color: #cbcbcb;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+/* 页头样式 */
 .m-page-header {
   padding: 9px 15px;
   margin: 0 0 20px 0;
-  /* border-bottom: 1px solid #eee; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   box-shadow: 1px 1px 1px #dddddd;
 }
+/* tab选项卡样式 */
 .m-nav-tabs > li {
   margin-bottom: 0;
 }
@@ -94,37 +131,7 @@
   padding: 10px 5px;
   font-size: 14px;
 }
-
-
-.m-form {
-  padding-top: 15px;
-}
-.m-secondary {
-  color: #bdbdbd;
-}
-.m-show-pic {
-  width: 120px;
-  height: 70px;
-  background-color: #cbcbcb;
-  margin-right: 5px;
-  border-radius: 3px;
-}
-.m-show-pic2 {
-  width: 30px;
-  height: 30px;
-  background-color: #cbcbcb;
-  margin-right: 5px;
-  border-radius: 3px;
-}
-
-
-
-.m-input-group {
-  margin-bottom: 5px;
-}
-
-
-
+/* tab选项卡样式2 */
 .m-nav-tabs-2 {
   border-bottom: none;
   margin-top: 15px;
@@ -146,6 +153,107 @@
   font-size: 14px;
   border-radius: 4px;
 }
+/* form上边距样式 */
+.m-form {
+  padding-top: 15px;
+}
+/* 次要文字样式 */
+.m-secondary {
+  color: #bdbdbd;
+}
+/* 重置分页样式 */
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #1fae92;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #1fae92;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #1fae92;
+  border-color: #1fae92;
+}
+/* pills导航样式 */
+.m-nav-pills > li.active > a,
+.m-nav-pills > li.active > a:hover,
+.m-nav-pills > li.active > a:focus {
+  background-color: #fff;
+  color: #ed8f39;
+  position: relative;
+}
+.m-nav-pills > li.active::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ed8f39;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+/* ==================== */
+/* ==== 菜品管理样式 ==== */
+/* ==================== */
+.m-input-group {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* ==================== */
+/* ==== 用户管理样式 ==== */
+/* ==================== */
+.m-yonghu-nav {
+  margin-top: 15px;
+}
+.m-pagination {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.m-pagination-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.m-label-con .label {
+  display: inline-block;
+}
+
+
+
+
+
 
 
 
@@ -153,6 +261,26 @@
 @media (min-width: 768px) {
 }
 @media (min-width: 992px) {
+  /* 用户管理样式 */
+  .m-pagination-box {
+    flex-flow: row;
+  }
+  .m-pagination-box p {
+    margin-bottom: 0;
+  }
+  .m-pagination {
+    margin-bottom: 0;
+  }
+  .m-yonghu-nav {
+    border-right: 1px solid #e3e3e3;
+    height: 50vh;
+  }
+  /* pills导航样式 */
+  .m-nav-pills > li.active::after {
+    content: '';
+    height: 0;
+    width: 0;
+  }
 }
 @media (min-width: 1200px) {
 }
