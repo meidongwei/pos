@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>桌台编辑</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container-fluid">
+
+    <div class="m-page-header navbar-fixed-top">
+      <h4>【一楼大厅】桌台编辑</h4>
+      <div>
+        <a href="javascript:;" class="btn m-btn-outline-red">删除</a>
+        <a href="javascript:;" class="btn m-btn-outline-blue">保存</a>
+      </div>
+    </div>
+
+    <div class="form-horizontal m-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zth" class="col-sm-3 control-label">桌台号：</label>
+            <div class="col-sm-9">
+              <input id="zth" type="text" class="form-control" placeholder="008">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ztm" class="col-sm-3 control-label">桌台名：</label>
+            <div class="col-sm-9">
+              <input id="ztm" type="text" class="form-control" placeholder="VIP1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cws" class="col-sm-3 control-label">餐位数：</label>
+            <div class="col-sm-9">
+              <input id="cws" type="number" class="form-control" placeholder="6">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cws" class="col-sm-3 control-label">桌台类别：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="ztlb" value="option1" checked>
+                雅间
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="ztlb" value="option1">
+                包房
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="ztlb" value="option1">
+                散台
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cws" class="col-sm-4 control-label">参与开台率计算：</label>
+            <div class="col-sm-8">
+              <label class="radio-inline">
+                <input type="radio" name="ztlb" value="option1" checked>
+                是
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="ztlb" value="option1">
+                否
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a class="btn m-btn-outline-blue" data-toggle="collapse"
+            href="#collapseExample" style="margin-bottom: 15px;">
+            桌台费用设置 <span class="caret"></span>
+          </a>
+          <div class="collapse" id="collapseExample">
+            <p class="m-secondary">
+              注：客人扫码自助点餐默认不收服务费。
+            </p>
+            <div class="form-group">
+              <label for="cws" class="col-sm-3 control-label">茶位费：</label>
+              <div class="col-sm-9">
+                <label class="radio-inline">
+                  <input type="radio" name="cwf" value="option1">
+                  不加收
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="cwf" value="option1" checked>
+                  加收
+                </label>
+              </div>
+              <div class="col-sm-9 col-sm-offset-3">
+                <div class="input-group" style="margin-top:5px;">
+                  <div class="input-group-addon">茶位费加收</div>
+                  <input type="text" class="form-control" id="exampleInputAmount">
+                  <div class="input-group-addon">元/人</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cws" class="col-sm-3 control-label">服务费：</label>
+              <div class="col-sm-9">
+                <label class="radio-inline">
+                  <input type="radio" name="fwf" value="option1">
+                  不加收
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="fwf" value="option1" checked>
+                  加收额定服务费
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="fwf" value="option1" checked>
+                  加收比例服务费
+                </label>
+              </div>
+              <div class="col-sm-9 col-sm-offset-3">
+                <div class="input-group" style="margin-top:5px;">
+                  <div class="input-group-addon">加收额定服务费</div>
+                  <input type="text" class="form-control" id="exampleInputAmount">
+                  <div class="input-group-addon">元</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
