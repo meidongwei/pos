@@ -1,6 +1,9 @@
 /* ==================== */
 /* ====== 通用样式 ====== */
 /* ==================== */
+body {
+  padding-bottom: 50px;
+}
 /* 标签样式格式化 */
 .label {
   padding: 0.25em 0.4em;
@@ -54,19 +57,19 @@
   color: #fff;
   background-color: #1fae92;
 }
-.m-btn-blue:hover,
-.m-btn-blue:active,
-.m-btn-blue.active,
-.m-btn-blue:focus,
-.m-btn-blue.focus,
-.m-btn-blue:active:hover,
-.m-btn-blue.active:hover,
-.m-btn-blue:active:focus,
-.m-btn-blue.active:focus
-.m-btn-blue:active.focus,
-.m-btn-blue.active.focus {
+.m-btn-green:hover,
+.m-btn-green:active,
+.m-btn-green.active,
+.m-btn-green:focus,
+.m-btn-green.focus,
+.m-btn-green:active:hover,
+.m-btn-green.active:hover,
+.m-btn-green:active:focus,
+.m-btn-green.active:focus
+.m-btn-green:active.focus,
+.m-btn-green.active.focus {
   color: #fff;
-  background-color: #1fae92;
+  background-color: #188f78;
 }
 /* 蓝色按钮 */
 .m-btn-blue {
@@ -255,6 +258,7 @@
 /* ==================== */
 /* ==== 菜品管理样式 ==== */
 /* ==================== */
+
 
 
 

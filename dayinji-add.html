@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>打印机添加</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container-fluid">
+
+    <div class="m-page-header navbar-fixed-top">
+      <h4>打印机添加</h4>
+      <a href="javascript:;" class="btn m-btn-outline-blue">返回</a>
+    </div>
+
+
+    <div class="form-horizontal m-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="dyjbm" class="col-sm-3 control-label">打印机编码：</label>
+            <div class="col-sm-9">
+              <input id="dyjbm" type="text" class="form-control" placeholder="016">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dyjmc" class="col-sm-3 control-label">打印机名称：</label>
+            <div class="col-sm-9">
+              <input id="dyjmc" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">打印机品牌：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="dyjpp"
+                 value="option1" checked> 通用
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dyjpp"
+                 value="option2"> 佳博
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dyjpp"
+                 value="option2"> 斯普瑞特
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dyjpp"
+                 value="option2"> 莹普通
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dyjpp"
+                 value="option2"> 其它
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">纸张类型：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="zzlx"
+                 value="option1" checked> 80
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="zzlx"
+                 value="option2"> 75
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="zzlx"
+                 value="option2"> 58
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">端口方式：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="dkfs222"
+                 value="option1" checked> 串口
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dkfs222"
+                 value="option2"> 网口
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dkfs222"
+                 value="option2"> 并口
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ipdz" class="col-sm-3 control-label">IP地址：</label>
+            <div class="col-sm-9">
+              <input id="ipdz" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dyfwip" class="col-sm-3 control-label">打印服务IP：</label>
+            <div class="col-sm-9">
+              <input id="dyfwip" type="text" class="form-control"
+                placeholder="请输入打印服务所在电脑的IP地址">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">备用打印机：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="bydyj"
+                 value="option1" checked> 无需备用
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="bydyj"
+                 value="option2"> 我是打印机1
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="bydyj"
+                 value="option2"> 我是打印机2
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 flex-center">
+          <div style="margin-bottom: 20px;">
+            <button type="button" class="btn btn-default">放弃</button>
+            <a href="./dayinji-renwu.html" class="btn m-btn-blue">保存并设置打印任务</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>
