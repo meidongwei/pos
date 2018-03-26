@@ -234,6 +234,14 @@
   bottom: 0;
   left: 0;
 }
+.m-margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -302,6 +310,10 @@
     content: '';
     height: 0;
     width: 0;
+  }
+  /* 点菜宝页面用到 */
+  .m-margin-bottom-10 {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

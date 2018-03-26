@@ -124,21 +124,23 @@
             <hr>
             <div class="row"
               style="margin-bottom:10px;display:flex;justify-content:center;">
-              <div class="col-xs-6 col-md-2">
-                <a href="javascript:;" class="btn m-btn-blue btn-block"
-                  onclick="handleAddPane()">+</a>
-              </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="dw" class="col-sm-3 control-label">单位：</label>
-                  <div class="col-sm-9">
+                  <label for="dw" class="col-sm-3 col-xs-12 control-label">单位：</label>
+                  <div class="col-sm-6 col-xs-8">
                     <select class="form-control" id="dw">
                       <option>请选择单位</option>
                       <option>份</option>
                       <option>克</option>
                     </select>
+                  </div>
+                  <div class="col-sm-3 col-xs-4">
+                    <a href="javascript:;" class="btn m-btn-blue"
+                      onclick="handleAddPane()">
+                      <i class="glyphicon glyphicon-plus"></i>
+                    </a>
                   </div>
                 </div>
                 <div class="form-group">
@@ -688,26 +690,26 @@
   <script>
     function handleAddPane () {
       $('#m-add').append(`
-        <div class="row" style="margin-bottom:10px;">
-          <div class="col-xs-6 col-md-2 col-md-offset-4">
-            <a href="javascript:;" class="btn btn-danger btn-block"
-              onclick="handleDelPane()">-</a>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <a href="javascript:;" class="btn m-btn-blue btn-block"
-              onclick="handleAddPane()">+</a>
-          </div>
-        </div>
         <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label for="dw" class="col-sm-3 control-label">单位：</label>
-            <div class="col-sm-9">
+            <label for="dw" class="col-sm-3 col-xs-12 control-label">单位：</label>
+            <div class="col-sm-6 col-xs-8">
               <select class="form-control" id="dw">
                 <option>请选择单位</option>
                 <option>份</option>
                 <option>克</option>
               </select>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+              <a href="javascript:;" class="btn btn-danger"
+                onclick="handleDelPane()">
+                <i class="glyphicon glyphicon-plus"></i>
+              </a>
+              <a href="javascript:;" class="btn m-btn-blue"
+                onclick="handleAddPane()">
+                <i class="glyphicon glyphicon-plus"></i>
+              </a>
             </div>
           </div>
           <div class="form-group">

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>点菜宝设置</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container-fluid">
+
+    <div class="m-page-header navbar-fixed-top">
+      <h4>点菜宝设置</h4>
+      <a href="javascript:;" class="btn m-btn-outline-blue">返回</a>
+    </div>
+
+    <div class="form-inline" style="margin:15px 0;">
+      <div class="form-group">
+        <label for="dcb">点菜宝：</label>
+        <input type="text" class="form-control" id="dcb" placeholder="点菜宝编码">
+      </div>
+      <button type="button" class="btn m-btn-green m-margin-bottom-10">查询</button>
+      <div class="form-group">
+        <span class="form-control-static">
+          点菜宝模式：未开台直接点菜/打印预结单
+        </span>
+      </div>
+      <a href="javascript:;" class="btn btn-default">更改模式</a>
+      <button type="button" class="btn m-btn-green pull-right">添加</button>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <tr>
+          <td>序号</td>
+          <td>基站编码</td>
+          <td>基站类型</td>
+          <td>端口方式</td>
+          <td>无线服务IP地址</td>
+          <td>点菜宝编码</td>
+          <td>操作</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>BL-09</td>
+          <td>网口</td>
+          <td>192.168.10.10</td>
+          <td>1、2、3、4</td>
+          <td>
+            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+            <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>BL-09</td>
+          <td>网口</td>
+          <td>192.168.10.10</td>
+          <td>1、2、3、4</td>
+          <td>
+            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+            <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>BL-09</td>
+          <td>网口</td>
+          <td>192.168.10.10</td>
+          <td>1、2、3、4</td>
+          <td>
+            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+            <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>BL-09</td>
+          <td>网口</td>
+          <td>192.168.10.10</td>
+          <td>1、2、3、4</td>
+          <td>
+            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+            <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>BL-09</td>
+          <td>网口</td>
+          <td>192.168.10.10</td>
+          <td>1、2、3、4</td>
+          <td>
+            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+            <a href="javascript:;" class="btn m-btn-blue btn-xs">修改</a>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="m-pagination-box">
+      <p>显示第1-10页结果，共12页</p>
+      <ul class="pagination m-pagination">
+        <li><a href="#">上一页</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- 注：以下 hr 标签为无用代码 可删除 -->
+    <hr>
+    <!-- end -->
+
+    <!-- 点菜宝设置 -->
+    <div class="form-horizontal m-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label text-primary">基站信息：</label>
+          </div>
+          <div class="form-group">
+            <label for="jzbm" class="col-sm-3 control-label">基站编码：</label>
+            <div class="col-sm-9">
+              <input id="jzbm" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">基站类型：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="jzlx"
+                 value="option1" checked> BL-09
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="jzlx"
+                 value="option2"> BL-09J
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="jzlx"
+                 value="option2"> BL-09美食口袋
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="jzlx"
+                 value="option2"> BL-11
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">端口方式：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="dkfs"
+                 value="option1" checked> 网口
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dkfs"
+                 value="option2"> 串口
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="dkfs"
+                 value="option2"> USB口
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="jzip" class="col-sm-3 control-label">基站IP地址：</label>
+            <div class="col-sm-9">
+              <input id="jzip" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="wxfuip" class="col-sm-3 control-label">无线服务IP：</label>
+            <div class="col-sm-9">
+              <input id="wxfuip" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label text-primary">点菜宝信息：</label>
+          </div>
+          <div class="form-group">
+            <label for="dcbbm" class="col-sm-3 col-xs-12 control-label">点菜宝编码：</label>
+            <div class="col-sm-6 col-xs-9">
+              <input id="dcbbm" type="text" class="form-control" placeholder="请输入3位以内的编码">
+            </div>
+            <div class="col-sm-3 col-xs-3">
+              <a href="javascript:;" class="btn m-btn-blue">
+                <i class="glyphicon glyphicon-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 flex-center">
+          <div style="margin-bottom: 20px;">
+            <button type="button" class="btn btn-default">放弃</button>
+            <button type="button" class="btn m-btn-blue">保存</button>
+            <button type="button" class="btn m-btn-blue">保存并继续</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>
