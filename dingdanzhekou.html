@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>订单折扣</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container-fluid">
+
+    <div class="m-page-header navbar-fixed-top">
+      <h4>订单折扣添加</h4>
+      <div>
+        <a href="javascript:;" class="btn m-btn-outline-red">删除</a>
+        <a href="javascript:;" class="btn m-btn-outline-blue">保存</a>
+      </div>
+    </div>
+
+    <div class="form-horizontal m-form">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="m-secondary">
+            注：此方案默认永久有效，且全天可用。
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zkmc" class="col-sm-3 control-label">折扣名称：</label>
+            <div class="col-sm-9">
+              <input id="zkmc" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ywmc" class="col-sm-3 control-label">英文名称：</label>
+            <div class="col-sm-9">
+              <input id="ywmc" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group has-feedback">
+            <label class="control-label col-sm-3" for="zkl">折扣率：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="zkl">
+              <span class="glyphicon form-control-feedback">%</span>
+            </div>
+          </div>
+          <div class="form-group has-feedback">
+            <label class="control-label col-sm-3" for="zxzjsjb">执行者角色级别：</label>
+            <div class="col-sm-9">
+              <select class="form-control" id="zxzjsjb">
+                <option>请选择</option>
+                <option>5级以上</option>
+                <option>8级以上</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cws" class="col-sm-3 control-label">适用人群：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="syrq" value="option1">
+                所有人
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="syrq" value="option1">
+                普客
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="syrq" value="option1" checked>
+                会员
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">适用会员等级：</label>
+            <div class="col-sm-9">
+              <label class="checkbox-inline">
+                <input type="checkbox" value="option1"> 大匠会员
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="option1" checked> 中匠会员
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="option1"> 普通会员
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">优惠共享规则：</label>
+            <div class="col-sm-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用会员代金券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用会员菜品券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用自定义代金券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用团购券
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
