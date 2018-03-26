@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>满减优惠</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container-fluid">
+
+    <div class="m-page-header navbar-fixed-top">
+      <h4>满减优惠设置</h4>
+      <div>
+        <a href="javascript:;" class="btn m-btn-outline-red">删除</a>
+        <a href="javascript:;" class="btn m-btn-outline-blue">保存</a>
+      </div>
+    </div>
+
+    <div class="form-horizontal m-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label">优惠类型：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="yhlx" value="option1" checked>
+                线下满减优惠
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="yhlx" value="option1">
+                线上满减优惠
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="yhmc" class="col-sm-3 control-label">优惠名称：</label>
+            <div class="col-sm-9">
+              <input id="yhmc" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ywmc2" class="col-sm-3 control-label">英文名称：</label>
+            <div class="col-sm-9">
+              <input id="ywmc2" type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">满减优惠：</label>
+            <div class="col-sm-9">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="ddm" value="option1" checked>
+                  订单满
+                </label>
+                <label class="has-feedback">
+                  <input style="margin-bottom:8px;" type="text" class="form-control">
+                  <span style="margin-right:-15px;" class="form-control-feedback">%</span>
+                </label>
+                <br>
+                <label>立减</label>
+                <label><input type="text" class="form-control"></label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="ddm" value="option1">
+                  订单每满
+                </label>
+                <label><input type="text" class="form-control" disabled></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">适用人群：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="syrq1" value="option1">
+                所有人
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="syrq1" value="option1" checked>
+                普客
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="syrq1" value="option1">
+                会员
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label">优惠共享规则：</label>
+            <div class="col-sm-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用会员代金券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用会员菜品券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用自定义代金券
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="option1" checked>
+                  可以同时使用团购券
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">有效日期：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="yxrq" value="option1" checked>
+                永久有效
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="yxrq" value="option1">
+                限时有效
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="chNum" class="col-sm-3 control-label">日期限制：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="rqxz222" value="option1" checked>
+                每逢星期几
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="rqxz222" value="option1">
+                每逢几号
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="rqxz222" value="option1">
+                每一天
+              </label>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3">
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周一
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周二
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周三
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周四
+              </label>
+              <br>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周五
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周六
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox"
+                  value="option1" checked> 周日
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">可用时间：</label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="kysj" value="option1" checked>
+                全天可用
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="kysj" value="option1">
+                指定时间可用
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

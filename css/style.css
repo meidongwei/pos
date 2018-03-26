@@ -242,6 +242,10 @@
   justify-content: center;
   align-items: center;
 }
+/* 所有input后面文字样式 */
+.form-control-feedback {
+  color: #bdbdbd;
+}
 
 
 
@@ -251,9 +255,6 @@
 /* ==================== */
 /* ==== 菜品管理样式 ==== */
 /* ==================== */
-.m-input-group {
-  margin-bottom: 5px;
-}
 
 
 
@@ -281,6 +282,13 @@
 }
 
 
+
+
+/* ==================== */
+/* ==== 满减优惠样式 ==== */
+/* ==================== */
+.m-form-control {
+}
 
 
 

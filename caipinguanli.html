@@ -146,19 +146,31 @@
                 <div class="form-group">
                   <label for="edcb" class="col-sm-3 control-label">额定成本：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="edcb" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="edcb" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="dctc" class="col-sm-3 control-label">点菜员提成：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="dctc" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="dctc" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="cctc" class="col-sm-3 control-label">传菜员提成：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="cctc" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="cctc" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -166,25 +178,41 @@
                 <div class="form-group">
                   <label for="dj" class="col-sm-3 control-label">单价：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="dj" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="dj" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="hyj" class="col-sm-3 control-label">会员价：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="hyj" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="hyj" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="cstc" class="col-sm-3 control-label">厨师提成：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="cstc" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="cstc" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="pcytc" class="col-sm-3 control-label">配菜员提成：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="pcytc" placeholder="单位（元）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="pcytc" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">元</span>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -205,7 +233,11 @@
                 <div class="form-group">
                   <label for="zzsc" class="col-sm-3 control-label">制作时长：</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="zzsc" placeholder="单位（分）">
+                    <label class="has-feedback" style="width:100%;">
+                      <input type="text" class="form-control" id="zzsc" placeholder="">
+                      <span style="margin-right:-8px;width:auto;"
+                        class="form-control-feedback">分</span>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -446,7 +478,31 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="input-group m-input-group">
+                    <div class="form-group">
+                      <div class="col-sm-9">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="option1" checked>
+                            红烧 加价
+                          </label>
+                          <label class="has-feedback">
+                            <input style="margin-bottom:8px;" type="text" class="form-control">
+                            <span style="margin-right:-15px;" class="form-control-feedback">元</span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="option1" checked>
+                            清蒸 加价
+                          </label>
+                          <label class="has-feedback">
+                            <input style="margin-bottom:8px;" type="text" class="form-control">
+                            <span style="margin-right:-15px;" class="form-control-feedback">元</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="input-group m-input-group">
                       <span class="input-group-addon">
                         <input type="checkbox">
                       </span>
@@ -462,7 +518,7 @@
                       <span class="input-group-addon">加价</span>
                       <input type="text" class="form-control"
                         placeholder="单位（元）" disabled>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -594,7 +650,11 @@
                     <div class="form-group">
                       <label for="cptj" class="col-sm-3 control-label">菜品特价：</label>
                       <div class="col-sm-9">
-                        <input type="text" id="cptj" class="form-control" placeholder="单位（元）">
+                        <label class="has-feedback" style="width:100%;">
+                          <input type="text" class="form-control" id="cptj" placeholder="">
+                          <span style="margin-right:-8px;width:auto;"
+                            class="form-control-feedback">元</span>
+                        </label>
                       </div>
                     </div>
                     <div class="form-group">

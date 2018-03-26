@@ -82,7 +82,7 @@
             </p>
             <div class="form-group">
               <label for="cws" class="col-sm-3 control-label">茶位费：</label>
-              <div class="col-sm-9">
+              <div class="col-sm-9" style="margin-bottom:8px;">
                 <label class="radio-inline">
                   <input type="radio" name="cwf" value="option1">
                   不加收
@@ -93,16 +93,18 @@
                 </label>
               </div>
               <div class="col-sm-9 col-sm-offset-3">
-                <div class="input-group" style="margin-top:5px;">
-                  <div class="input-group-addon">茶位费加收</div>
-                  <input type="text" class="form-control" id="exampleInputAmount">
-                  <div class="input-group-addon">元/人</div>
-                </div>
+                <label for="ssbl" class="control-label"
+                  style="font-weight:normal;">茶位费加收</label>
+                <label class="has-feedback">
+                  <input id="ssbl" style="margin-bottom:8px;" type="text" class="form-control">
+                  <span style="margin-right:-8px;width:auto;"
+                    class="form-control-feedback">元/人</span>
+                </label>
               </div>
             </div>
             <div class="form-group">
               <label for="cws" class="col-sm-3 control-label">服务费：</label>
-              <div class="col-sm-9">
+              <div class="col-sm-9" style="margin-bottom:8px;">
                 <label class="radio-inline">
                   <input type="radio" name="fwf" value="option1">
                   不加收
@@ -117,11 +119,13 @@
                 </label>
               </div>
               <div class="col-sm-9 col-sm-offset-3">
-                <div class="input-group" style="margin-top:5px;">
-                  <div class="input-group-addon">加收额定服务费</div>
-                  <input type="text" class="form-control" id="exampleInputAmount">
-                  <div class="input-group-addon">元</div>
-                </div>
+                <label for="ssbl" class="control-label"
+                  style="font-weight:normal;">加收额定服务费</label>
+                <label class="has-feedback">
+                  <input id="ssbl" style="margin-bottom:8px;" type="text" class="form-control">
+                  <span style="margin-right:-8px;width:auto;"
+                    class="form-control-feedback">元</span>
+                </label>
               </div>
             </div>
           </div>

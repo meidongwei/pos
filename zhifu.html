@@ -84,17 +84,18 @@
             <label for="username" class="col-sm-3 control-label">实收属性：</label>
             <div class="col-sm-9">
               <div class="checkbox">
-                <label>
-                  <input type="checkbox" value=""> 计入实收
+                <label style="margin-bottom:5px;">
+                  <input type="checkbox" checked> 计入实收
                 </label>
               </div>
             </div>
             <div class="col-sm-9 col-sm-offset-3">
-              <div class="input-group" style="margin-top:5px;">
-                <span class="input-group-addon">实收比例为</span>
-                <input type="text" class="form-control" placeholder="">
-                <span class="input-group-addon">%</span>
-              </div>
+              <label for="ssbl" class="control-label"
+                style="font-weight:normal;">实收比例为</label>
+              <label class="has-feedback">
+                <input id="ssbl" style="margin-bottom:8px;" type="text" class="form-control">
+                <span style="margin-right:-15px;" class="form-control-feedback">%</span>
+              </label>
             </div>
           </div>
           <div class="form-group">
