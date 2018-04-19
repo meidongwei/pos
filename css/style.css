@@ -314,7 +314,6 @@ body {
   }
   .m-yonghu-nav {
     border-right: 1px solid #e3e3e3;
-    height: 50vh;
   }
   /* pills导航样式 */
   .m-nav-pills > li.active::after {
